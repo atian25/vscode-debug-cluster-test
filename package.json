@@ -1,0 +1,16 @@
+{
+  "name": "vscode-debug-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ps": "ps aux | grep -v grep | grep debug=",
+    "kill": "npm run ps -s | awk '{print $2}' | xargs kill;"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cfork": "^1.5.1"
+  }
+}
