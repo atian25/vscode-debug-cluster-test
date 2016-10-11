@@ -1,5 +1,7 @@
 const http = require('http');
 
+console.log('worker process.execArgv', process.execArgv)
+
 http.Server((req, res) => {
   res.writeHead(200);
   res.end('hello world\n');

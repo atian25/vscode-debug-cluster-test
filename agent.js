@@ -1,6 +1,6 @@
 const http = require('http');
 
-console.log(process.execArgv)
+console.log('agent process.execArgv', process.execArgv)
 
 http.Server((req, res) => {
   res.writeHead(200);
